@@ -1,0 +1,27 @@
+{
+  "name": "world-clock-weather-dashboard",
+  "version": "1.0.0",
+  "description": "A simple Node.js web app displaying date, time, and weather for Singapore, India, Australia, and Japan",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest app.simple.test.js",
+    "test:all": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "clock",
+    "weather",
+    "dashboard",
+    "world-time"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
