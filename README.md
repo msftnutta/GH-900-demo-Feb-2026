@@ -1,3 +1,5 @@
+	![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
 # GH-900 Demo — Timezones & Weather (Node.js)
 
 This Node.js web app demonstrates a simple UI that displays current times for multiple regions and a weather forecast using Azure Maps. It's built for the GH-900 training course.
