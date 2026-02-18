@@ -84,6 +84,42 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
         });
     });
 
+    describe('DateTime Display Elements - Thailand', () => {
+        test('should have Thailand time display element', () => {
+            expect(appContent).toContain('id="th-time"');
+        });
+
+        test('should have Thailand date display element', () => {
+            expect(appContent).toContain('id="th-date"');
+        });
+
+        test('should have Thailand city name (Bangkok)', () => {
+            expect(appContent).toContain('Thailand (Bangkok)');
+        });
+
+        test('should have Thailand flag emoji', () => {
+            expect(appContent).toContain('🇹🇭');
+        });
+    });
+
+    describe('DateTime Display Elements - United Kingdom', () => {
+        test('should have UK time display element', () => {
+            expect(appContent).toContain('id="uk-time"');
+        });
+
+        test('should have UK date display element', () => {
+            expect(appContent).toContain('id="uk-date"');
+        });
+
+        test('should have UK city name (London)', () => {
+            expect(appContent).toContain('United Kingdom (London)');
+        });
+
+        test('should have UK flag emoji', () => {
+            expect(appContent).toContain('🇬🇧');
+        });
+    });
+
     describe('Weather Data Display Elements', () => {
         test('should have weather container element', () => {
             expect(appContent).toContain('id="weather-container"');
@@ -122,6 +158,16 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
             expect(appContent).toContain('35.6762');
             expect(appContent).toContain('139.6503');
         });
+
+        test('should have Bangkok coordinates', () => {
+            expect(appContent).toContain('13.7563');
+            expect(appContent).toContain('100.5018');
+        });
+
+        test('should have London coordinates', () => {
+            expect(appContent).toContain('51.5074');
+            expect(appContent).toContain('-0.1278');
+        });
     });
 
     describe('Weather Data Fields', () => {
@@ -157,6 +203,14 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
 
         test('should have Japan timezone', () => {
             expect(appContent).toContain("'jp': 'Asia/Tokyo'");
+        });
+
+        test('should have Thailand timezone', () => {
+            expect(appContent).toContain("'th': 'Asia/Bangkok'");
+        });
+
+        test('should have UK timezone', () => {
+            expect(appContent).toContain("'uk': 'Europe/London'");
         });
     });
 
