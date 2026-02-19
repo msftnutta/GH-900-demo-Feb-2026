@@ -120,6 +120,24 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
         });
     });
 
+    describe('DateTime Display Elements - Netherlands', () => {
+        test('should have Netherlands time display element', () => {
+            expect(appContent).toContain('id="nl-time"');
+        });
+
+        test('should have Netherlands date display element', () => {
+            expect(appContent).toContain('id="nl-date"');
+        });
+
+        test('should have Netherlands city name (Amsterdam)', () => {
+            expect(appContent).toContain('Netherlands (Amsterdam)');
+        });
+
+        test('should have Netherlands flag emoji', () => {
+            expect(appContent).toContain('🇳🇱');
+        });
+    });
+
     describe('Weather Data Display Elements', () => {
         test('should have weather container element', () => {
             expect(appContent).toContain('id="weather-container"');
@@ -168,6 +186,11 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
             expect(appContent).toContain('51.5074');
             expect(appContent).toContain('-0.1278');
         });
+
+        test('should have Amsterdam coordinates', () => {
+            expect(appContent).toContain('52.3676');
+            expect(appContent).toContain('4.9041');
+        });
     });
 
     describe('Weather Data Fields', () => {
@@ -211,6 +234,10 @@ describe('World Clock & Weather Dashboard - DateTime & Weather Tests', () => {
 
         test('should have UK timezone', () => {
             expect(appContent).toContain("'uk': 'Europe/London'");
+        });
+
+        test('should have Netherlands timezone', () => {
+            expect(appContent).toContain("'nl': 'Europe/Amsterdam'");
         });
     });
 
