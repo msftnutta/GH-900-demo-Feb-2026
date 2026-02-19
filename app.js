@@ -212,6 +212,22 @@ function getHtmlContent() {
                     </div>
                 </div>
             </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="clock-card">
+                    <div class="d-flex align-items-center">
+                        <span class="location-flag">🇳🇱</span>
+                        <div>
+                            <div class="city-name">Netherlands (Amsterdam)</div>
+                            <div>
+                                <span class="time-display" id="nl-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
+                            <div class="date-display" id="nl-date">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="weather-card">
@@ -230,7 +246,8 @@ function getHtmlContent() {
             'in': 'Asia/Kolkata',
             'jp': 'Asia/Tokyo',
             'th': 'Asia/Bangkok',
-            'uk': 'Europe/London'
+            'uk': 'Europe/London',
+            'nl': 'Europe/Amsterdam'
         };
 
         function updateTime() {
@@ -285,7 +302,8 @@ function getHtmlContent() {
                     { name: 'New Delhi, India', lat: 28.7041, lon: 77.1025 },
                     { name: 'Tokyo, Japan', lat: 35.6762, lon: 139.6503 },
                     { name: 'Bangkok, Thailand', lat: 13.7563, lon: 100.5018 },
-                    { name: 'London, United Kingdom', lat: 51.5074, lon: -0.1278 }
+                    { name: 'London, United Kingdom', lat: 51.5074, lon: -0.1278 },
+                    { name: 'Amsterdam, Netherlands', lat: 52.3676, lon: 4.9041 }
                 ];
 
                 let weatherHtml = '<div class="row">';
