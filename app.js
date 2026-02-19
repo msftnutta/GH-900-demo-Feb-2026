@@ -55,6 +55,17 @@ function getHtmlContent() {
             font-family: 'Courier New', monospace;
             margin-bottom: 10px;
         }
+        .time-format-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            font-size: 11px;
+            padding: 3px 8px;
+            border-radius: 12px;
+            margin-left: 10px;
+            font-weight: 600;
+            vertical-align: middle;
+        }
         .date-display {
             font-size: 14px;
             color: #666;
@@ -112,7 +123,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇸🇬</span>
                         <div>
                             <div class="city-name">Singapore</div>
-                            <div class="time-display" id="sg-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="sg-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="sg-date">Loading...</div>
                         </div>
                     </div>
@@ -125,7 +139,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇦🇺</span>
                         <div>
                             <div class="city-name">Australia (Sydney)</div>
-                            <div class="time-display" id="au-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="au-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="au-date">Loading...</div>
                         </div>
                     </div>
@@ -138,7 +155,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇮🇳</span>
                         <div>
                             <div class="city-name">India (New Delhi)</div>
-                            <div class="time-display" id="in-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="in-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="in-date">Loading...</div>
                         </div>
                     </div>
@@ -151,7 +171,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇯🇵</span>
                         <div>
                             <div class="city-name">Japan (Tokyo)</div>
-                            <div class="time-display" id="jp-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="jp-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="jp-date">Loading...</div>
                         </div>
                     </div>
@@ -164,7 +187,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇹🇭</span>
                         <div>
                             <div class="city-name">Thailand (Bangkok)</div>
-                            <div class="time-display" id="th-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="th-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="th-date">Loading...</div>
                         </div>
                     </div>
@@ -177,7 +203,10 @@ function getHtmlContent() {
                         <span class="location-flag">🇬🇧</span>
                         <div>
                             <div class="city-name">United Kingdom (London)</div>
-                            <div class="time-display" id="uk-time">--:--:--</div>
+                            <div>
+                                <span class="time-display" id="uk-time">--:--:--</span>
+                                <span class="time-format-badge">24H</span>
+                            </div>
                             <div class="date-display" id="uk-date">Loading...</div>
                         </div>
                     </div>
